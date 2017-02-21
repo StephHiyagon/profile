@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <h1><b><center>Formulario de Datos</center></b></h1>
+<section>
+  <center>
+  <form action="">
+    <div>
+      <label for="nombres"><b>Nombres</b> </label><br>
+      <input id= "nombres" type="text" required>
+    </div><br>
+    <div>
+      <label for="apellidos"><b>Apellidos</b></label><br>
+      <input id="apellidos" type="text"required>
+    </div><br>
+    <div>
+      <label for="telefono"><b>Celular</b></label><br>
+      <input id="telefono" type="text" pattern="^[9]\d{8}$"required>
+    </div><br>
+    <div>
+      <label for="escoger"><b>Escoge tu Carro</b></label><br>
+      <select id="escoger" required>
+        <option value="" hidden>Escoge tu carro</option>
+        <option value="1">Honda</option>
+        <option value="2">Subaru</option>
+        <option value="3">Toyota</option>
+        <option value="4">Hyundai</option>
+      </select>
+      </div></br>
+    <div>
+      <label for="email"><b>Email</b></label><br>
+      <input id= "email" type="correo" required>
+    </div><br>
+    <div>
+      <label for="contraseña"><b>Crea tu contraseña</b></label><br>
+      <input id="contraseña" type="text" pattern=".{6,}" title="La contraseña mínimo debe contar con 6 caracteres" required>
+    </div><br>
+    <input type="submit" value="send">
+    </form>
+  </center>
+</section>
+</body>
+</html>
